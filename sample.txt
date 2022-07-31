@@ -1,0 +1,7 @@
+﻿
+  - platform: template
+    sensors: 
+      bmw_torque_%ENDING%:
+        friendly_name: "%FRIENDLY_NAME%"
+        unit_of_measurement: '%UNIT%'
+        value_template: "{{ state_attr('sensor.bmw_torque','%FULL_NAME%') }}"
